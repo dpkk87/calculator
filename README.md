@@ -1,0 +1,2 @@
+# calculator
+Minimal calculator program
