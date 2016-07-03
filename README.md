@@ -43,7 +43,7 @@ result: 16
 
 calculator1.reset();
 
-resets the expression back from nothing.
+resets the expression back to nothing.
 
 
 
