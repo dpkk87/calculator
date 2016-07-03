@@ -3,11 +3,18 @@ function calculator() {
     var openBrackets = 0;
     var possibleOperands = ["+", "-", "*", "/"];
     var lastResult = "", equalPressedLast = false;
+    var returnPayload = {};
 
     this.parseEntry = function (singleEntry) {
         var lastEntry = null;
         var executableCharacters = [];
-        var returnPayload = {};
+
+        if (equalPressedLast) {
+            equalPressedLast = false;
+            if (possibleOperands.indexOf(singleEntry) == -1) {
+                this.reset();
+            }
+        }
 
         lastEntry = individualCharacters[individualCharacters.length - 1];
 
