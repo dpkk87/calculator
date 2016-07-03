@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="calculator">
+        <div id="displayInput">&nbsp</div>
+        <div id="displayOutput">&nbsp</div>
+        <div class="buttons">
+            <div class="btn-column">
+                <button onclick="send('7')">7</button>
+                <button onclick="send('4')">4</button>
+                <button onclick="send('1')">1</button>
+                <button onclick="send('.')">.</button>
+                <button onclick="send('(')">(</button>
+            </div>
+
+            <div class="btn-column">
+                <button onclick="send('8')">8</button>
+                <button onclick="send('5')">5</button>
+                <button onclick="send('2')">2</button>
+                <button onclick="send('0')">0</button>
+                <button onclick="send(')')">)</button>
+            </div>
+
+            <div class="btn-column">
+                <button onclick="send('9')">9</button>
+                <button onclick="send('6')">6</button>
+                <button onclick="send('3')">3</button>
+                <button onclick="equalPressed()">=</button>
+                <button onclick="reset(true)">C</button>
+            </div>
+
+            <div class="btn-column operators">
+                <button onclick="send('+')">+</button>
+                <button onclick="send('-')">-</button>
+                <button onclick="send('*')">*</button>
+                <button onclick="send('/')">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
