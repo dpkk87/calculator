@@ -9,12 +9,6 @@ function calculator() {
         var executableCharacters = [];
         var returnPayload = {};
 
-        //Reset the expression if digits are pressed after equal.
-        if (equalPressedLast && possibleOperands.indexOf(singleEntry) == -1) {
-            equalPressedLast = false;
-            this.reset();
-        }
-
         lastEntry = individualCharacters[individualCharacters.length - 1];
 
         //Solving continous operator dilemma
