@@ -74,7 +74,8 @@ function calculator() {
 
         returnPayload.evaluatedExpression = executableCharacters.join("");
         returnPayload.actualExpression = individualCharacters.join("");
-        lastResult = returnPayload.result = eval(returnPayload.evaluatedExpression) || "";
+        lastResult =  eval(returnPayload.evaluatedExpression);
+        lastResult = returnPayload.result = lastResult != undefined ? lastResult : "";
 
         return returnPayload;
     }
